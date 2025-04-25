@@ -1,5 +1,7 @@
 # DirectAdmin MCP Server
 
+[![version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/omryatia/directadmin-mcp)
+
 A Model Context Protocol (MCP) server for DirectAdmin integration, allowing AI assistants to interact with DirectAdmin through natural language.
 
 ## Features

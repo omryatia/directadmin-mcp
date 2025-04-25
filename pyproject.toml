@@ -24,4 +24,4 @@ tag = true
 
 [tool.bumpver.file_patterns]
 "README.md" = ["{version}"]
-"directadmin_mcp/__init__.py" = ["{version}"]
+"directadmin_mcp/__init__.py" = ['__version__ = "{version}"']
