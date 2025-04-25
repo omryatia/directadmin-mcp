@@ -63,7 +63,7 @@ The server exposes DirectAdmin functionality through a tool-based interface, mak
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/directadmin-mcp.git
+   git clone https://github.com/omryatia/directadmin-mcp.git
    cd directadmin-mcp
    ```
 
