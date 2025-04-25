@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  directadmin-mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: directadmin-mcp:latest
+    container_name: directadmin-mcp
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8888/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    networks:
+      - mcp-network
+
+networks:
+  mcp-network:
+    driver: bridge
